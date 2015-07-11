@@ -30,7 +30,7 @@
           <h2 class="subtitle">Addressing data</h2>
           <section class="objectives panel panel-warning">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-certificate"></span>Learning Objectives</h2>
+<h2 id="learning-objectives"><span class="glyphicon glyphicon-certificate"></span>Learning Objectives</h2>
 </div>
 <div class="panel-body">
 <ul>
@@ -49,7 +49,7 @@
 <pre class="sourceCode r"><code class="sourceCode r">dat&lt;-<span class="kw">read.csv</span>(<span class="dt">file=</span><span class="st">&#39;data/sample.csv&#39;</span>,<span class="dt">header=</span><span class="ot">TRUE</span>, <span class="dt">stringsAsFactors=</span><span class="ot">FALSE</span>)</code></pre>
 <aside class="callout panel panel-info">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pushpin"></span>Tip</h2>
+<h2 id="tip"><span class="glyphicon glyphicon-pushpin"></span>Tip</h2>
 </div>
 <div class="panel-body">
 <p>The first row of this csv file is a list of column names. We used the <em>header=TRUE</em> argument to <code>read.csv</code> so that R can interpret the file correctly. We are using the <em>stringsAsFactors=FALSE</em> argument to override the default behaviour for R. Using factors in R is covered in a separate lesson.</p>
@@ -85,7 +85,7 @@
 <p>Data can be accessed by index. We have already seen how square brackets <code>[</code> can be used to subset (slice) data. The generic format is <code>dat[row_numbers,column_numbers]</code>.</p>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Challenge - Selecting values 1</h2>
+<h2 id="challenge---selecting-values-1"><span class="glyphicon glyphicon-pencil"></span>Challenge - Selecting values 1</h2>
 </div>
 <div class="panel-body">
 <p>What will be returned by <code>dat[1,1]</code>?</p>
@@ -97,7 +97,7 @@
 <p>If we leave out a dimension R will interpret this as a request for all values in that dimension.</p>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Challenge - Selecting values 2</h2>
+<h2 id="challenge---selecting-values-2"><span class="glyphicon glyphicon-pencil"></span>Challenge - Selecting values 2</h2>
 </div>
 <div class="panel-body">
 <p>What will be returned by <code>dat[,2]</code>?</p>
@@ -111,7 +111,7 @@
 <p>This can be very useful for addressing data.</p>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Challenge - Subsetting with sequences</h2>
+<h2 id="challenge---subsetting-with-sequences"><span class="glyphicon glyphicon-pencil"></span>Challenge - Subsetting with sequences</h2>
 </div>
 <div class="panel-body">
 <p>Use the colon operator to index just the aneurism count data (columns 6 to 9).</p>
@@ -128,7 +128,7 @@
 <p>Returns the first 5 columns for patients in rows 1,5,7 &amp; 9</p>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Challenge - Subsetting non-sequential data</h2>
+<h2 id="challenge---subsetting-non-sequential-data"><span class="glyphicon glyphicon-pencil"></span>Challenge - Subsetting non-sequential data</h2>
 </div>
 <div class="panel-body">
 <p>Return the Age and Gender values for the first 5 patients.</p>
@@ -143,7 +143,7 @@
 </code></pre>
 <aside class="callout panel panel-info">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pushpin"></span>Tip</h2>
+<h2 id="tip-1"><span class="glyphicon glyphicon-pushpin"></span>Tip</h2>
 </div>
 <div class="panel-body">
 <p>If names are not specified e.g. using <code>headers=FALSE</code> in a <code>read.csv()</code> function, R assigns default names <code>V1,V2,...,Vn</code></p>
@@ -170,7 +170,7 @@
 </code></pre>
 <aside class="callout panel panel-info">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pushpin"></span>Best Practice</h2>
+<h2 id="best-practice"><span class="glyphicon glyphicon-pushpin"></span>Best Practice</h2>
 </div>
 <div class="panel-body">
 <p>Best practice is to address columns by name, often you will create or delete columns and the column position will change.</p>
@@ -183,7 +183,7 @@
 </code></pre>
 <aside class="callout panel panel-info">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pushpin"></span>Tip</h2>
+<h2 id="tip-2"><span class="glyphicon glyphicon-pushpin"></span>Tip</h2>
 </div>
 <div class="panel-body">
 <p>Note the values <code>TRUE</code> and <code>FALSE</code> are all capital letters and are not quoted.</p>
@@ -208,7 +208,7 @@ dat[index,]$BloodPressure</code></pre>
 <p><img src="fig/logical_vectors_indexing2-1.png" title="plot of chunk logical_vectors_indexing2" alt="plot of chunk logical_vectors_indexing2" style="display: block; margin: auto;" /></p>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Challenge - Using logical indexes</h2>
+<h2 id="challenge---using-logical-indexes"><span class="glyphicon glyphicon-pencil"></span>Challenge - Using logical indexes</h2>
 </div>
 <div class="panel-body">
 <ol style="list-style-type: decimal">
@@ -226,7 +226,7 @@ x</code></pre>
 </code></pre>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Challenge - Updating a subset of values</h2>
+<h2 id="challenge---updating-a-subset-of-values"><span class="glyphicon glyphicon-pencil"></span>Challenge - Updating a subset of values</h2>
 </div>
 <div class="panel-body">
 <p>In this dataset, values for Gender have been recorded as both uppercase <code>M, F</code> and lowercase <code>m,f</code>. Combine the indexing and assignment operations to convert all values to lowercase.</p>

@@ -73,20 +73,36 @@ Rscript session-info.R
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 R version 3.2.0 (2015-04-16)
 Platform: x86_64-pc-linux-gnu (64-bit)
-Running under: Ubuntu 14.04.2 LTS
+Running under: Debian GNU/Linux stretch/sid
 
 locale:
- [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
- [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
- [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
- [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
- [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+ [1] LC_CTYPE=en_US.utf8       LC_NUMERIC=C             
+ [3] LC_TIME=en_US.utf8        LC_COLLATE=en_US.utf8    
+ [5] LC_MONETARY=en_US.utf8    LC_MESSAGES=en_US.utf8   
+ [7] LC_PAPER=en_US.utf8       LC_NAME=C                
+ [9] LC_ADDRESS=C              LC_TELEPHONE=C           
+[11] LC_MEASUREMENT=en_US.utf8 LC_IDENTIFICATION=C      
 
 attached base packages:
-[1] stats     graphics  grDevices utils     datasets  base     
+[1] stats     graphics  grDevices datasets  utils    
+[6] base     
+
+other attached packages:
+[1] xts_0.9-7       zoo_1.7-12      lattice_0.20-31
+[4] MASS_7.3-40    
+
+loaded via a namespace (and not attached):
+[1] grid_3.2.0
 
 ~~~
 
@@ -120,6 +136,14 @@ Rscript print-args.R
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 /usr/lib/R/bin/exec/R
 --slave
 --no-restore
@@ -148,6 +172,14 @@ R --slave --no-restore --file=print-args.R --args
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 /usr/lib/R/bin/exec/R
 --slave
 --no-restore
@@ -167,6 +199,14 @@ Rscript print-args.R first second third
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 /usr/lib/R/bin/exec/R
 --slave
 --no-restore
@@ -200,6 +240,14 @@ Rscript print-args-trailing.R first second third
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 first
 second
 third
@@ -234,6 +282,20 @@ Here's a simple test to run from the Unix Shell:
 Rscript readings-01.R data/inflammation-01.csv
 ~~~
 
+
+
+
+~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+~~~
+
 There is no output because we have defined a function, but haven't actually called it.
 Let's add a call to `main` and save it as `readings-02.R`:
 
@@ -260,6 +322,14 @@ Rscript readings-02.R data/inflammation-01.csv
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 5.45
 5.425
 6.1
@@ -337,6 +407,14 @@ Rscript readings-02.R data/inflammation-01.csv
 > 
 > 
 > ~~~{.output}
+> Loading required package: utils
+> 
+> Attaching package: ‘zoo’
+> 
+> The following objects are masked from ‘package:base’:
+> 
+>     as.Date, as.Date.numeric
+> 
 > 3
 > 
 > ~~~
@@ -350,6 +428,14 @@ Rscript readings-02.R data/inflammation-01.csv
 > 
 > 
 > ~~~{.output}
+> Loading required package: utils
+> 
+> Attaching package: ‘zoo’
+> 
+> The following objects are masked from ‘package:base’:
+> 
+>     as.Date, as.Date.numeric
+> 
 > -1
 > 
 > ~~~
@@ -373,6 +459,14 @@ Rscript readings-02.R data/inflammation-01.csv
 > 
 > 
 > ~~~{.output}
+> Loading required package: utils
+> 
+> Attaching package: ‘zoo’
+> 
+> The following objects are masked from ‘package:base’:
+> 
+>     as.Date, as.Date.numeric
+> 
 > print-args.R
 > print-args-trailing.R
 > 
@@ -424,6 +518,14 @@ Rscript readings-02.R data/small-01.csv
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 0.3333333
 1
 
@@ -465,6 +567,14 @@ Rscript readings-03.R data/small-01.csv data/small-02.csv
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 0.3333333
 1
 13.66667
@@ -526,6 +636,14 @@ Rscript readings-04.R --max data/small-01.csv
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 1
 2
 
@@ -620,6 +738,14 @@ Rscript count-stdin.R < data/small-01.csv
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 lines in standard input: 2
 
 ~~~
@@ -690,6 +816,14 @@ head data/inflammation-01.csv | Rscript readings-06.R --mean
 
 
 ~~~{.output}
+Loading required package: utils
+
+Attaching package: ‘zoo’
+
+The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
 5.45
 5.425
 6.1
