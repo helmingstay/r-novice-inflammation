@@ -30,6 +30,7 @@ and to use that language *well*.
 
 ## Topics
 
+1.  [Introduction to R](00-first-timers.html)
 1.  [Analyzing patient data](01-starting-with-data.html)
 2.  [Creating functions](02-func-R.html)
 3.  [Analyzing multiple data sets](03-loops-R.html)
